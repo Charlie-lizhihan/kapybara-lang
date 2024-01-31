@@ -6,11 +6,13 @@ type Node interface {
 	TokenLiteral() string
 }
 
+// All statement nodes implement this
 type Statement interface {
 	Node
 	statementNode()
 }
 
+// All expression nodes implement this
 type Expression interface {
 	Node
 	expressionNode()
@@ -50,4 +52,15 @@ type Identifier struct {
 func (i *Identifier) expressionNode() {}
 func (i *Identifier) TokenLiteral() string {
 	return i.Token.Literal
+}
+
+// return statement
+type ReturnStatement struct {
+	Token       token.Token
+	ReturnValue Expression
+}
+
+func (rs *ReturnStatement) statementNode() {}
+func (rs *ReturnStatement) TokenLiteral() string {
+	return rs.Token.Literal
 }
