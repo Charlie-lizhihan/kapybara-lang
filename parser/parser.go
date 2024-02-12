@@ -8,7 +8,7 @@ import (
 	"strconv"
 )
 
-// 优先级
+// priority
 const (
 	_int = iota
 	LOWEST
