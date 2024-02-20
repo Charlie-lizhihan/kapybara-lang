@@ -1,5 +1,6 @@
 # Kapybara Compiler 🐾
 
+（ｴ ´ ＼ ／ ｀ ｴ´）ww
 Hey there! Welcome to Kapybara, a quirky little compiler I whipped up for fun. It's a bit like C, but with its own twist and a lot more kapybara vibes!
 
 ## What's Kapybara?
