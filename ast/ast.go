@@ -287,7 +287,7 @@ func (ce *CallExpression) String() string {
 	return out.String()
 }
 
-// func
+// function
 type FunctoinLiteral struct {
 	Token      token.Token
 	Parameters []*Identifier
