@@ -46,6 +46,7 @@ const (
 	STRING   = "STRING"
 	LBRACKET = "["
 	RBRACKET = "]"
+	COLON    = ":"
 )
 
 var keywords = map[string]TokenType{
