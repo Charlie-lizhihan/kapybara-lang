@@ -1,35 +1,120 @@
-# Kapybara Compiler 🐾
+# Kapybara Language🐾
 
 （ｴ ´ ＼ ／ ｀ ｴ´）ww
-Hey there! Welcome to Kapybara, a quirky little compiler I whipped up for fun. It's a bit like C, but with its own twist and a lot more kapybara vibes!
 
-## What's Kapybara?
+Hey there! Welcome to Kapybara!
 
-Kapybara is all about having a good time while coding. It's not your typical serious programming language. Expect some fun syntax, cool features, and of course, some kapybara charm!
+Kapybara is an interpreted language that's simple yet powerful, designed for those who are taking their first steps into language development. Inspired by "Writing An Interpreter In Go", Kapybara boasts modern language features wrapped in a syntax that’s easy to pick up.
 
-## Cool Features
+## Features
 
-- **Hash Data Structures**: Because who doesn't like a good hash table?
-- **Array Data Structures**: Arrays are cool, so Kapybara has them too.
-- **String Data Structures**: Playing around with strings is always fun.
-- **Closures**: Kapybara can do closures; fancy, right?
-- **Higher-order and First-class Functions**: Getting a bit more advanced here, but Kapybara handles it like a champ.
-- **Built-in Functions**: Comes with some handy functions to save your day.
-- **Arithmetic Expressions**: Do all the math you want, Kapybara style.
-- **Boolean and Integer Types**: The bread and butter of programming, Kapybara style.
+Kapybara supports various features which include, but are not limited to:
 
-## Getting Started
+- Basic arithmetic and boolean expressions
+- Control structures like `if-else`
+- `let` bindings for variable assignment
+- First-class functions with closures
+- Built-in functions for working with strings, arrays, and hashes
+- Error handling with descriptive messages
 
-1. Clone this repo and dive into the Kapybara world.
-2. No installation guides here – just some good old trial and error.
-3. Explore, experiment, and enjoy!
+## Quick Start
 
-## Just For Fun
+To run the Kapybara compiler:
 
-This compiler is just a fun project, so feel free to poke around. No contributions needed – it's my personal playground. But if you find it amusing or interesting, that's awesome! 
+1. Enter the `kapybara-lang` directory:
 
-## Here Be Kapybaras
+   ```sh
+   cd path/to/kapybara-lang
+   ```
 
-Remember, Kapybara is all about fun and learning. Don't take it too seriously – it sure doesn't!
+1. Build the project using Go:
 
-Happy Kapybara coding!
+   ```
+   go build
+   ```
+
+2. Run the compiler:
+
+   ```
+   go run main.go
+   ```
+
+## Syntax and Examples
+
+### Let Bindings
+
+Use `let` to bind values to identifiers:
+
+```
+let identifier = expression;
+```
+
+Example:
+
+```
+let name = "Kapybara";
+let age = 1;
+```
+
+### If-Else Clause
+
+Kapybara uses `if-else` clauses for control flow:
+
+```
+if (condition) {
+  // code if condition is true
+} else {
+  // code if condition is false
+}
+```
+
+Example:
+
+```
+let x = 10;
+if (x < 20) {
+  x + 5;
+} else {
+  x - 5;
+}
+// Outputs 15
+```
+
+### Data Structures
+
+Kapybara supports arrays and hashes as fundamental data structures.
+
+**Arrays:**
+
+```
+let myArray = [1, 2, 3, 4];
+myArray[2]; // Accesses the element at index 2 (third element), which is 3
+```
+
+**Hashes:**
+
+```
+let myHash = {"name": "Kapybara", "age": 1};
+myHash["name"]; // Accesses the value associated with the key "name", which is "Kapybara"
+```
+
+### Functions
+
+Kapybara treats functions as first-class citizens:
+
+```
+let add = fn(a, b) { a + b; };
+add(5, 5); // Outputs 10
+```
+
+## Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make to the Kapybara project are **greatly appreciated**.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+
+
+
