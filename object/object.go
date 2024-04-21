@@ -28,7 +28,7 @@ type Object interface {
 	Inspect() string
 }
 
-type HashTable interface {
+type Hashable interface {
 	HashKey() HashKey
 }
 
