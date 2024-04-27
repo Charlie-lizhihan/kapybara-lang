@@ -24,13 +24,13 @@ parser errors:
         expected next token to be ], got EOF instead
 ```
 
-
-- Basic arithmetic and boolean expressions
-- Control structures like `if-else`
-- `let` bindings for variable assignment
-- First-class functions with closures
-- Built-in functions for working with strings, arrays, and hashes
-- Error handling with descriptive messages
+- Variables and constants for storing values.
+- Data types like integers, booleans, strings, arrays, and hash maps.
+- Arithmetic expressions (addition, subtraction, multiplication, etc.).
+- Comparison expressions and boolean expressions.
+- Control structures such as conditionals (if, else) and loops.
+- Functions (including first-class and higher-order functions).
+- Closures which allow for function encapsulation with environments.
 
 ## Quick Start
 
