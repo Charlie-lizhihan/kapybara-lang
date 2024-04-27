@@ -10,6 +10,21 @@ Kapybara is an interpreted language that's simple yet powerful, designed for tho
 
 Kapybara supports various features which include, but are not limited to:
 
+- When you input is not aligh with kapybara-lang syntax, one capybara will pop up and tell you it can't handle your code
+```
+>>[1,2,3,4]
+[1, 2, 3, 4]
+>>let double = fn(x) {x*2};
+>>[1, double(1), 3*3, 4-3]
+[1, 2, 9, 1]
+>>[1,2
+／* ｀ ｴ´）www
+Woops! Kapybara can't handle your code!
+parser errors:
+        expected next token to be ], got EOF instead
+```
+
+
 - Basic arithmetic and boolean expressions
 - Control structures like `if-else`
 - `let` bindings for variable assignment
